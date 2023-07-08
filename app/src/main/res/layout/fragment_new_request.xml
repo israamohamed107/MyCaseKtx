@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.requests.NewRequestFragment"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/navy_blue"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/new_request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_case_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/case_title"
+            android:padding="@dimen/_10sdp" />
+
+        <Spinner
+            android:id="@+id/spinner_court"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/spinner_background"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/_10sdp"
+            tools:listitem="@layout/list_item" />
+
+        <Spinner
+            android:id="@+id/spinner_case_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/spinner_background"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/_10sdp"
+            tools:listitem="@layout/list_item" />
+
+        <EditText
+            android:id="@+id/txt_client_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/client_name"
+            android:padding="@dimen/_10sdp"
+
+            />
+
+        <EditText
+            android:id="@+id/txt_client_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/client_address"
+            android:padding="@dimen/_10sdp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/txt_client_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/client_description"
+            android:padding="@dimen/_10sdp"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/txt_opposing_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/opposing_party_name"
+            android:padding="@dimen/_10sdp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/txt_opposing_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/opposing_party_address"
+            android:padding="@dimen/_10sdp"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/txt_opposing_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/opposing_party_description"
+            android:padding="@dimen/_10sdp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_files"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/baseline_add"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/files"
+            android:textSize="@dimen/_15ssp"
+
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_files"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background"
+            android:padding="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/file_item"
+            tools:itemCount="3"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_request"
+            android:textSize="@dimen/_18ssp"
+            android:background="@drawable/button_shape"
+            android:layout_marginHorizontal="@dimen/_50sdp"
+
+            android:layout_marginVertical="@dimen/_20sdp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</LinearLayout>

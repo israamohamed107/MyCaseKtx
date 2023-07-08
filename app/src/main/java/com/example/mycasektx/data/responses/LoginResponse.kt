@@ -1,4 +1,4 @@
-package com.example.mycasektx.domain.responses
+package com.example.mycasektx.data.responses
 
 data class LoginResponse(
     val token: String,

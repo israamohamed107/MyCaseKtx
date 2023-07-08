@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.requests.RequestDetailsFragment">
+
+
+    <TextView
+        android:id="@+id/txt_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:text="طلب رقم"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:background="@drawable/top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:padding="@dimen/_10sdp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20ssp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="رقم الطلب"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_request_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="رقم الطلب"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="موضوع القضية"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_case_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="موضوع القضية "
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="فئة القضية"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_case_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="فئة القضية"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="المحكمة"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_court"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="المحكمة"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="اسم الموكل"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_client_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:hint="اسم الموكل"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="عنوان الموكل"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_client_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="عنوان الموكل"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="صفته"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_client_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="صفته"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="اسم الخصم"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_request_opposing_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="اسم الخصم"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="عنوان الخصم"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_opposing_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="عنوان الخصم"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="صفته"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_opposing_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="صفته"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_move"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_50sdp"
+                android:background="@drawable/button_shape"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

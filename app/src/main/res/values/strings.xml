@@ -1,5 +1,19 @@
 <resources>
-    <string name="app_name">MyCaseKtx</string>
+    <string name="app_name" translatable="false">قضيتي</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="requests" translatable="false">الطلبات</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="case_title" translatable="false">موضوع القضية</string>
+    <string name="client_name" translatable="false">اسم الموكل</string>
+    <string name="client_address" translatable="false">عنوان الموكل</string>
+    <string name="client_description" translatable="false">صفته</string>
+    <string name="opposing_party_name" translatable="false">اسم الخصم</string>
+    <string name="opposing_party_address" translatable="false">عنوان الخصم</string>
+    <string name="opposing_party_description" translatable="false">صفته</string>
+    <string name="files" translatable="false">الملفات</string>
+    <string name="send_request" translatable="false">إرسال الطلب</string>
+    <string name="new_request" translatable="false">طلب جديد</string>
+    <string name="required" translatable="false"> مطلوب</string>
+
 </resources>

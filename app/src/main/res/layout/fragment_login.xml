@@ -59,30 +59,36 @@
         >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            >
 
             <EditText
                 android:id="@+id/user_name"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="@dimen/_50sdp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20sp"
                 android:layout_marginStart="20sp"
-                android:hint="email"
+                android:background="@drawable/edit_text_background"
+                android:hint="البريد الإلكتروني"
+                android:padding="@dimen/_10sdp"
                 android:paddingStart="20sp"
                 />
             <EditText
                 android:id="@+id/user_pass"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="@dimen/_50sdp"
                 app:layout_constraintTop_toBottomOf="@+id/user_name"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20sp"
                 android:layout_marginStart="20sp"
-                android:hint="user password"
+                android:hint="كلمة المرور"
+                android:background="@drawable/edit_text_background"
+                android:padding="@dimen/_10sdp"
                 android:paddingStart="20sp"
                 android:paddingEnd="20sp"
                 />
@@ -99,12 +105,12 @@
                 />
 
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_login"
-                android:layout_width="300dp"
-                android:layout_height="65dp"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="@dimen/_100sdp"
                 android:layout_marginEnd="20dp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -112,6 +118,7 @@
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 android:textStyle="bold"
+                android:background="@drawable/button_shape"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_pass" />
@@ -127,46 +134,20 @@
 
                 />
 
-            <TextView
-                android:id="@+id/con_sign"
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:text="continue with"
-                android:textStyle="bold"
-                android:layout_marginStart="10sp"
-                app:layout_constraintStart_toEndOf="@+id/horizontal_line"
-                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
-
-            <View
-                android:layout_width="130dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="52dp"
-                app:layout_constraintStart_toEndOf="@+id/con_sign"
+                android:backgroundTint="@color/navy_blue"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+                app:layout_constraintTop_toBottomOf="@id/btn_login"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="68dp"
-
-                android:src="@drawable/google"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/con_sign" />
-
-            <ImageView
-                android:id="@+id/face"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="232dp"
-
-                android:src="@drawable/facebook"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/con_sign" />
 
             <TextView
                 android:id="@+id/perso"
@@ -179,7 +160,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.426"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/face" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
             <TextView
                 android:id="@+id/pers"
@@ -192,7 +173,7 @@
                 android:text="Register now"
                 android:textColor="#3297EE"
                 app:layout_constraintStart_toEndOf="@+id/perso"
-                app:layout_constraintTop_toBottomOf="@+id/face" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

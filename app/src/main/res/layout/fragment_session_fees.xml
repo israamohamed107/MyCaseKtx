@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.session.SessionFeesFragment"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/txt_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:text="مقدار الرسوم"
+        android:paddingRight="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:background="@drawable/top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="رقم الطلب"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_request_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="رقم الطلب"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="موضوع القضية"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_case_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="موضوع القضية "
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="المحكمة"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_court"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="المحكمة"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="مقدار الرسوم"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_fees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="20 جنيهًا مصريًا"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="right"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_50sdp"
+        android:text="دفع الرسوم"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:background="@drawable/button_shape"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        />
+
+</LinearLayout>

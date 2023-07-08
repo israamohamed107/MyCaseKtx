@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >قضيتي</string>
+    <string name="requests" >الطلبات</string>
+    <string name="hello_blank_fragment" >Hello blank fragment</string>
+    <string name="case_title" >موضوع القضية</string>
+    <string name="client_name" >اسم الموكل</string>
+    <string name="client_address" >عنوان الموكل</string>
+    <string name="client_description" >صفته</string>
+    <string name="opposing_party_name" >اسم الخصم</string>
+    <string name="opposing_party_address" >عنوان الخصم</string>
+    <string name="opposing_party_description" >صفته</string>
+    <string name="files" >الملفات</string>
+    <string name="send_request" >إرسال الطلب</string>
+    <string name="new_request" >طلب جديد</string>
+    <string name="required" > مطلوب</string>  
+    
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.session.SessionDateFragment"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/txt_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:text="موعد الجلسة"
+        android:paddingRight="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:background="@drawable/top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="رقم الطلب"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_request_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="رقم الطلب"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="موضوع القضية"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_case_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="موضوع القضية "
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="المحكمة"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_court"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="المحكمة"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="موعد الجلسة الأولى"
+        android:textColor="@color/navy_blue"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txt_first_session_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="10/3/2023 21:30 pm"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="right"
+        />
+
+
+
+</LinearLayout>

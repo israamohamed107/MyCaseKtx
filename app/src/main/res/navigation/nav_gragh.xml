@@ -3,11 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_gragh"
-    app:startDestination="@id/loginFragment">
-
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mycasektx.ui.login.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.mycasektx.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mycasektx.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_allRequestsFragment"
+            app:destination="@id/allRequestsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newRequestFragment"
+        android:name="com.example.mycasektx.ui.requests.NewRequestFragment"
+        android:label="fragment_new_request"
+        tools:layout="@layout/fragment_new_request" />
+    <fragment
+        android:id="@+id/requestDetailsFragment"
+        android:name="com.example.mycasektx.ui.requests.RequestDetailsFragment"
+        android:label="fragment_request_details"
+        tools:layout="@layout/fragment_request_details" >
+        <argument
+            android:name="request"
+            app:argType="com.example.mycasektx.data.responses.RequestResponse" />
+        <action
+            android:id="@+id/action_requestDetailsFragment_to_sessionDateFragment"
+            app:destination="@id/sessionDateFragment" />
+        <action
+            android:id="@+id/action_requestDetailsFragment_to_sessionFeesFragment"
+            app:destination="@id/sessionFeesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allRequestsFragment"
+        android:name="com.example.mycasektx.ui.requests.AllRequestsFragment"
+        android:label="AllRequestsFragment"
+        tools:layout="@layout/fragment_all_requests"
+        >
+        <action
+            android:id="@+id/action_allRequestsFragment_to_newRequestFragment"
+            app:destination="@id/newRequestFragment" />
+        <action
+            android:id="@+id/action_allRequestsFragment_to_requestDetailsFragment"
+            app:destination="@id/requestDetailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/sessionDateFragment"
+        android:name="com.example.mycasektx.ui.session.SessionDateFragment"
+        android:label="fragment_session_date"
+        tools:layout="@layout/fragment_session_date" >
+        <argument
+            android:name="request"
+            app:argType="com.example.mycasektx.data.responses.RequestResponse" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionFeesFragment"
+        android:name="com.example.mycasektx.ui.session.SessionFeesFragment"
+        android:label="fragment_session_fees"
+        tools:layout="@layout/fragment_session_fees" >
+        <argument
+            android:name="request"
+            app:argType="com.example.mycasektx.data.responses.RequestResponse" />
+    </fragment>
+
+
 </navigation>

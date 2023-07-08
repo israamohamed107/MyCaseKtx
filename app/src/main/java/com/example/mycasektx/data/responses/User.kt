@@ -1,4 +1,4 @@
-package com.example.mycasektx.domain.responses
+package com.example.mycasektx.data.responses
 
 data class User(
     val created_at: String,
